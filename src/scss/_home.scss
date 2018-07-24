@@ -1,8 +1,15 @@
 .home{
     .logo{
-        background: white;
-        height: 70px;
-        width: 150px;
+        border: 5px solid #fff;
+        height: 100px;
+        width: 130px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3rem;
+        color: #fff;
+        line-height: 0;
+        letter-spacing: 8px;
     }
     .info-section{
         padding: 54px;
@@ -54,8 +61,8 @@
                 position: absolute;
                 top: 56px;
                 left: -250px;
-                width: 500px;
-                height: calc(100% - 120px);
+                width: 450px;
+                height: calc(100% - 110px);
                 // INI MENGGUNAKAN IMAGE FULL BACKGROUND
                 background: url(https://image.afcdn.com/story/20140908/kendall-jenner-488067_w767h767c1cx814cy484.jpg) 
                 no-repeat center center; 

@@ -46,9 +46,16 @@ table {
   border-spacing: 0; }
 
 .home .logo {
-  background: white;
-  height: 70px;
-  width: 150px; }
+  border: 5px solid #fff;
+  height: 100px;
+  width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: #fff;
+  line-height: 0;
+  letter-spacing: 8px; }
 
 .home .info-section {
   padding: 54px;
@@ -89,8 +96,8 @@ table {
       position: absolute;
       top: 56px;
       left: -250px;
-      width: 500px;
-      height: calc(100% - 120px);
+      width: 450px;
+      height: calc(100% - 110px);
       background: url(https://image.afcdn.com/story/20140908/kendall-jenner-488067_w767h767c1cx814cy484.jpg) no-repeat center center;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -127,12 +134,13 @@ body {
   font-family: 'Barlow Semi Condensed', sans-serif;
   height: 100%; }
 
-.hamburger-icon {
+.menu-icon {
   position: fixed;
   right: 36px;
   top: 36px;
-  padding: 20px; }
-  .hamburger-icon .fa {
+  padding: 20px;
+  z-index: 11; }
+  .menu-icon .fa {
     font-size: 2rem;
     color: #4b21ff; }
 
@@ -164,14 +172,16 @@ body {
 #menu {
   background: #4b21ff;
   position: fixed;
+  width: 100%;
   top: 0;
-  left: 0;
-  right: 0;
   bottom: 0;
+  transform: translate3d(-100%, 0, 0);
   z-index: 10;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  opacity: 1;
+  transition: all 0.5 ease-in-out; }
   #menu nav {
     width: 400px; }
     #menu nav a {
@@ -181,3 +191,14 @@ body {
       text-align: center;
       font-size: 2.3rem;
       padding: 1rem; }
+      #menu nav a:hover {
+        color: #a9a9a9; }
+
+.menu-active .menu-icon .fa {
+  color: white; }
+
+.menu-active #menu {
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  transform: translate3d(0, 0, 0); }
