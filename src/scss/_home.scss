@@ -1,0 +1,101 @@
+.home{
+    .logo{
+        background: white;
+        height: 70px;
+        width: 150px;
+    }
+    .info-section{
+        padding: 54px;
+        width: 35%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        .info-box{
+            
+            position: absolute;
+            bottom: 60px;
+
+            h4{
+                font-size: 1.2rem;
+                color: $color3;
+                margin: 0.7rem 0;
+            }
+
+            p{
+                font-size: 0.9rem;
+                font-weight: 300;
+                color: $color3;
+                margin: 0.2rem 0 1.6rem;
+            }
+        }
+        .icon-section{
+            a{
+                color: white;
+                text-decoration: none;
+                font-size: 1.5rem;
+                padding: 0.2rem;
+            }
+        }
+    }
+    .content-area{
+        margin-left: 35%;
+        width: 65%;
+        background: white;
+        height: 100%;
+        // padding: 0 0 0 25%;
+        .img-container{
+            display: inline-block;
+            width: 30%;
+            position: relative;
+            height: 100%;
+
+            .user-img{
+                position: absolute;
+                top: 56px;
+                left: -250px;
+                width: 500px;
+                height: calc(100% - 120px);
+                // INI MENGGUNAKAN IMAGE FULL BACKGROUND
+                background: url(https://image.afcdn.com/story/20140908/kendall-jenner-488067_w767h767c1cx814cy484.jpg) 
+                no-repeat center center; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+        }
+        
+        .profile-section{
+            vertical-align: top;
+            display: inline-block;
+            padding: 20% 0 0;
+            max-width: 400px;
+            
+            .profile{
+                h1{
+                    font-size: 2.3rem;
+                    font-weight: 500;
+                    line-height: 1.2;
+                    margin: 0 0 1rem;
+
+                    span{
+                        color: $color1;
+                    }
+                }
+                h5{
+                    font-size: 1.1rem;
+                    margin: 0 0 2rem;
+                }
+
+                p{
+                    color: $color5;
+                    font-weight: 300;
+                    line-height: 1.4;
+                    margin: 0 0 2rem;
+                }
+            }
+        }
+
+    }
+}
